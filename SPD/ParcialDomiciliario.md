@@ -65,7 +65,7 @@ Esa misma temperatura es comparada para determinar las estacion del año con la 
 
 //Funcion que toma la temperatura
 float obtenerTemperatura(){
-  int lecturaSensor = analogRead(A0);// Con analogRead leemos el valor del sensor de temperatura
+  int lecturaSensor = analogRead(A0); // Con analogRead leemos el valor del sensor de temperatura
   float temperatura = map(lecturaSensor, 20, 358, -40, 125);
   return temperatura;
 }
